@@ -1,135 +1,113 @@
-* {
-	box-sizing: border-box;
-}
-
-h1 {
-	font-family: Droid Sans , fantasy;
-	color: pink;
-}
-
 body {
-	background-image: url("chicken.jpg");
-	background-color: pink;
-
+  font-size: 16px;
+  color: #fff;
+  background-color: #e6f9ff; /*maroon*/
+  font-family: 'Oxygen', sans-serif;
 }
 
-p {
-	padding: 10px;
-	margin: 0;
-}
-
-.container {
-	border: none;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 10px;
-}
-
-section {
-	border:	2px solid black;
-	background-color: pink;
-	width: 90%;
-	height: auto;
-	font-family: Monospace;
-	color: black;
-	position: relative;
-	overflow: auto;
-}
-
-#chicken {
-	border: 1px solid black;
-	text-align: center;
-	width: 30%;
-	margin-left: 70%;
-	font-family: helvetica,sans-serif;
+h1 { 
+	font-family: 'Lora', sans-serif;
+	color:#ffffff;
+	font-size: 1.5em;
 	font-weight: bold;
-	font-size: 125%;
-	margin-bottom: 0;
 	margin-top: 0;
-	padding: 5px;
-	background-color: tomato ;
+	margin-bottom: 0;
+	line-height: .75;
 }
 
-#Mutton {
-	border: 1px solid black;
-	text-align: center;
-	width: 30%;
-	margin-left: 70%;
-	font-family: Monospace,sans-serif;
+h2 { 
+	font-family: 'Lora', sans-serif;
+	color:#006080;
+	/*font-size: 1.8em;*/
 	font-weight: bold;
-	font-size: 125%;
-	margin-bottom: 0;
-	margin-top: 0;
-	padding: 5px;
-	background-color: green;
+	margin-top: 20px;
+	line-height: .75;
 }
 
-#sushi {
-	border: 1px solid black;
-	text-align: center;
-	width: 30%;
-	margin-left: 70%;
-	font-family: Monospace,sans-serif;
+h3 { 
+	font-family: 'Lora', sans-serif;
+	/*font-size: 1.3em;*/
 	font-weight: bold;
-	font-size: 125%;
-	margin-bottom: 0;
-	margin-top: 0;
-	background-color:  violet;
-	color: white;
-	padding: 5px;
 }
 
-#chicken-div {
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
 
-#Mutton-div {
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
 
-#sushi-div {
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-.navbar-brand {
-  font-size: 2em;
-  border: 0 0 10px 10px;
-  color: blue;
-}
-
+/** ============= HEADER ===================== **/
 #header-nav {
-  border: 0;
-  background-color: #6495ED;
-  color: #FFFFFF;
+	background-color: #cc6600;  
+}
+
+/*Menu items*/
+#nav-list {
+  margin-top: 10px;
+  background-color: #804000; 
+}
+#nav-list a { /*dropdown menu colors*/
+  color: #ffffff;
+  background: #992600;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #661a00;
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #61122f;
-}
-.navbar-header button.navbar-toggle {
-  clear: both;
-  margin-top: -30px;
+  border: 1px solid #661a00;
 }
 
-.nav-header {
-  background-color: #FFFFFF;
+/** ============= Main content ===================== **/
+
+#main-content a {
+	text-decoration: none;
 }
 
-.nav-brand {
-  color: #FFFFFF;
-  font-size: 2em;
+.sectiontxt h3 {
+	padding: 5px 0px 15px 0px ;
+	margin: 10px 0px 0px 0px ;
 }
 
-#nav-list {
-  color: white;
+div.sectiontxt{
+	margin: 10px;
+	background: #006080;
+	color: #e6f9ff;
+	padding: 15px;
 }
 
-.item {
-  color: white;
-  font-size: 1.5em;
+.sectiontxt a {
+	color: #ffcc00;
+}
+
+.sectiontxt a:hover {
+	color: #ff9900;
+}
+
+/** #################################################################### **/
+/** ============= Media queries ===================== **/
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+.navbar-brand h1 {font-size: 2em;}
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.5em; }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) { 
+.navbar-brand h1 {font-size: 1.8em;}
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.3em; }
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) { 
+.navbar-brand h1 {font-size: 1.5em;}
+h2 { font-size: 1.3em; }
+h3 { font-size: 1.1em; }
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) { 
+.navbar-brand h1 {font-size: 1.5em;} 
+h2 { font-size: 1.3em; }
+h3 { font-size: 1.1em; }
 }
